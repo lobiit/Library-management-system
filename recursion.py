@@ -13,3 +13,14 @@ def fn(a):
     return
 
 fn(1)
+
+# Fibonacci Series
+def fibonaci(c):
+    if c<= 1:
+        return c
+
+    oneBack = fibonaci(c-1)
+    twoBack = fibonaci(c - 2)
+    return oneBack + twoBack
+
+print(fibonaci(10))
